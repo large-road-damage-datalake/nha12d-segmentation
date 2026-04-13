@@ -1,0 +1,31 @@
+{
+  "columns": [
+    "Class",
+    "Object count",
+    "Avg area (%)",
+    "Max area (%)",
+    "Min area (%)",
+    "Min height (px)",
+    "Min height (%)",
+    "Max height (px)",
+    "Max height (%)",
+    "Avg height (px)",
+    "Avg height (%)"
+  ],
+  "data": [
+    [
+      "crack",
+      1016,
+      0.0318,
+      1.1403,
+      0.0,
+      1.0,
+      0.0926,
+      1080.0,
+      100.0,
+      62.54,
+      5.7908
+    ]
+  ],
+  "description": "Area and height are relative to image size where (%) columns are 0-100 scale."
+}
