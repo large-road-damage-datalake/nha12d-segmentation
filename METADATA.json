@@ -123,7 +123,7 @@
     "homepage": "https://github.com/ZheningHuang/NHA12D-Crack-Detection-Dataset-and-Comparison-Study"
   },
   "citation": {
-    "bibtex": "@article{huang2022nha12d,\n  title = {NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms},\n  author = {Huang, Zhening and Chen, Weiwei and Al-Tabbaa, Abir and Brilakis, Ioannis},\n  journal = {European Conference on Computing in Construction},\n  year = {2022},\n  doi = {10.48550/arXiv.2205.01198},\n  url = {https://arxiv.org/abs/2205.01198}\n}"
+    "bibtex": "@article{huang2022nha12d,\n  title = {NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms},\n  author = {Huang, Zhening and Chen, Weiwei and Al-Tabbaa, Abir and Brilakis, Ioannis},\n  journal = {European Conference on Computing in Construction},\n  year = {2022},\n  doi = {10.35490/EC3.2022.160},\n  url = {https://ec-3.org/publications/conference/paper/?id=EC32022_160}\n}"
   },
   "tags": [
     "segmentation",
