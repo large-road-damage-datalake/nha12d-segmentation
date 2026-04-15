@@ -119,7 +119,7 @@
   "links": {
     "github": "https://github.com/large-road-damage-datalake/nha12d-segmentation",
     "download": "https://github.com/ZheningHuang/NHA12D-Crack-Detection-Dataset-and-Comparison-Study",
-    "paper": "https://arxiv.org/abs/2205.01198",
+    "paper": "https://ec-3.org/publications/conference/paper/?id=EC32022_160",
     "homepage": "https://github.com/ZheningHuang/NHA12D-Crack-Detection-Dataset-and-Comparison-Study"
   },
   "citation": {
@@ -136,7 +136,7 @@
   ],
   "source_publication": {
     "dataset_doi": "Not provided",
-    "article_doi": "10.48550/arXiv.2205.01198",
+    "article_doi": "10.35490/EC3.2022.160",
     "article_title": "NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms",
     "journal": "European Conference on Computing in Construction",
     "year": 2022
