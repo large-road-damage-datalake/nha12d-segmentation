@@ -20,7 +20,8 @@
       "task_subtype": "semantic_segmentation"
     },
     "segmentation_type": "semantic_segmentation",
-    "task_subtype": "semantic_segmentation"
+    "task_subtype": "semantic_segmentation",
+    "label_taxonomy_version": "road_damage_v1"
   },
   "imaging_setup": {
     "camera": "Digital survey vehicle cameras on UK A12 road network",
@@ -48,7 +49,9 @@
           "id": 1,
           "name": "crack",
           "description": "NHA12D class: crack",
-          "color": "#294F71"
+          "color": "#294F71",
+          "canonical_name": "crack",
+          "instances": 1016
         }
       ]
     }
@@ -68,9 +71,9 @@
     "split": {
       "data": {
         "n_images": 80,
-        "percentage": 1.0,
+        "percentage": 1,
         "n_images_with_annotations": 80,
-        "annotation_coverage": 1.0,
+        "annotation_coverage": 1,
         "dataset_size": "24.66 MB",
         "dataset_size_bytes": 25854985,
         "dataset_file_count": 160
@@ -83,7 +86,7 @@
         "name": "United Kingdom",
         "image_count": 80,
         "annotated_image_count": 80,
-        "annotation_coverage": 1.0
+        "annotation_coverage": 1
       }
     ],
     "temporal_scope": "Published 2022"
@@ -140,5 +143,31 @@
     "article_title": "NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms",
     "journal": "European Conference on Computing in Construction",
     "year": 2022
+  },
+  "class_taxonomy": {
+    "version": "road_damage_v1",
+    "classes": [
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "is_damage_target": true,
+        "aliases": [
+          "crack",
+          "cracked"
+        ],
+        "source_labels": [
+          "crack"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      }
+    ],
+    "damage_types": [
+      "crack"
+    ],
+    "unresolved_labels": []
   }
 }
