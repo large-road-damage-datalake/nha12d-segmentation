@@ -19,9 +19,9 @@
       "primary_task": "segmentation",
       "task_subtype": "semantic_segmentation"
     },
+    "label_taxonomy_version": "road_damage_v2",
     "segmentation_type": "semantic_segmentation",
-    "task_subtype": "semantic_segmentation",
-    "label_taxonomy_version": "road_damage_v1"
+    "task_subtype": "semantic_segmentation"
   },
   "imaging_setup": {
     "camera": "Digital survey vehicle cameras on UK A12 road network",
@@ -38,6 +38,20 @@
         "resolution": "1920x1080",
         "count": 80
       }
+    ],
+    "resolution_by_country": [
+      {
+        "name": "United Kingdom",
+        "resolutions": [
+          "1920x1080"
+        ],
+        "resolution_details": [
+          {
+            "resolution": "1920x1080",
+            "count": 80
+          }
+        ]
+      }
     ]
   },
   "annotation_schema": [
@@ -51,29 +65,60 @@
           "description": "NHA12D class: crack",
           "color": "#294F71",
           "canonical_name": "crack",
-          "instances": 1016
+          "instances": 864
         }
       ]
     }
   ],
+  "class_taxonomy": {
+    "version": "road_damage_v2",
+    "classes": [
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
+        "is_damage_target": true,
+        "aliases": [
+          "crack",
+          "cracked"
+        ],
+        "source_labels": [
+          "crack"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      }
+    ],
+    "damage_types": [
+      "crack"
+    ],
+    "unresolved_labels": []
+  },
   "statistics": {
     "n_images": 80,
-    "n_annotations": 1016,
+    "n_annotations": 864,
     "n_images_with_annotations": 80,
-    "average_annotations_per_image": 12.7,
+    "average_annotations_per_image": 10.8,
     "dataset_size": "24.66 MB",
     "dataset_size_bytes": 25854985,
     "dataset_file_count": 160,
     "image_format": "png_masks",
     "class_distribution": {
-      "crack": 1016
+      "crack": 864
     },
     "split": {
       "data": {
         "n_images": 80,
-        "percentage": 1,
+        "percentage": 1.0,
         "n_images_with_annotations": 80,
-        "annotation_coverage": 1,
+        "annotation_coverage": 1.0,
         "dataset_size": "24.66 MB",
         "dataset_size_bytes": 25854985,
         "dataset_file_count": 160
@@ -86,7 +131,7 @@
         "name": "United Kingdom",
         "image_count": 80,
         "annotated_image_count": 80,
-        "annotation_coverage": 1
+        "annotation_coverage": 1.0
       }
     ],
     "temporal_scope": "Published 2022"
@@ -126,7 +171,7 @@
     "homepage": "https://github.com/ZheningHuang/NHA12D-Crack-Detection-Dataset-and-Comparison-Study"
   },
   "citation": {
-    "bibtex": "@article{huang2022nha12d,\n  title = {NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms},\n  author = {Huang, Zhening and Chen, Weiwei and Al-Tabbaa, Abir and Brilakis, Ioannis},\n  journal = {European Conference on Computing in Construction},\n  year = {2022},\n  doi = {10.35490/EC3.2022.160},\n  url = {https://ec-3.org/publications/conference/paper/?id=EC32022_160}\n}"
+    "bibtex": "@article{huang2022nha12d,\n  title = {NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms},\n  author = {Huang, Zhening and Chen, Weiwei and Al-Tabbaa, Abir and Brilakis, Ioannis},\n  journal = {European Conference on Computing in Construction},\n  year = {2022},\n  doi = {10.48550/arXiv.2205.01198},\n  url = {https://arxiv.org/abs/2205.01198}\n}"
   },
   "tags": [
     "segmentation",
@@ -143,36 +188,5 @@
     "article_title": "NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms",
     "journal": "European Conference on Computing in Construction",
     "year": 2022
-  },
-  "class_taxonomy": {
-    "version": "road_damage_v2",
-    "classes": [
-      {
-        "canonical_name": "crack",
-        "display_name": "Crack",
-        "damage_family": "crack",
-        "damage_subtype": "generic",
-        "role": "damage_target",
-        "semantic_role": "damage",
-        "training_role": "target",
-        "status": "stable",
-        "is_damage_target": true,
-        "aliases": [
-          "crack",
-          "cracked"
-        ],
-        "source_labels": [
-          "crack"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      }
-    ],
-    "damage_types": [
-      "crack"
-    ],
-    "unresolved_labels": []
   }
 }

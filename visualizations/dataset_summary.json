@@ -1,13 +1,29 @@
 {
   "total_images": 80,
-  "total_annotations": 1016,
+  "total_annotations": 864,
   "total_classes": 1,
+  "annotated_images": 80,
+  "annotation_coverage": 1.0,
+  "image_resolution_histogram": {
+    "1920x1080": 80
+  },
+  "resolution_details": [
+    {
+      "resolution": "1920x1080",
+      "count": 80
+    }
+  ],
   "splits_breakdown": {
     "data": {
       "images": 80,
-      "annotations": 1016,
+      "annotations": 864,
+      "annotated_images": 80,
+      "annotation_coverage": 1.0,
       "classes": {
-        "crack": 1016
+        "crack": 864
+      },
+      "image_resolution_histogram": {
+        "1920x1080": 80
       }
     }
   }

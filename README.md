@@ -6,7 +6,7 @@ NHA12D is a task-specific package derived from the published NHA12D crack segmen
 
 - Task: segmentation
 - Images: 80
-- Annotations: 1016
+- Annotations: 864
 - Classes: 1 (crack)
 - Annotation format: paired PNG masks
 
@@ -16,8 +16,8 @@ The source dataset contains 80 pavement images (40 asphalt and 40 concrete) capt
 
 - Name: NHA12D
 - Source URL: https://github.com/ZheningHuang/NHA12D-Crack-Detection-Dataset-and-Comparison-Study
-- Paper URL: https://arxiv.org/abs/2205.01198
-- Paper DOI: 10.48550/arXiv.2205.01198
+- Paper URL: https://ec-3.org/publications/conference/paper/?id=EC32022_160
+- Paper DOI: 10.35490/EC3.2022.160
 
 ## Authors
 

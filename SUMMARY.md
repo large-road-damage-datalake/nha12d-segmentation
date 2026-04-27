@@ -4,8 +4,8 @@
 - Source dataset: NHA12D
 - Task: segmentation
 - Image count: 80
-- Annotation count: 1016
+- Annotation count: 864
 - Class setup: 1 (crack)
 
 Primary reference:
-- DOI: 10.48550/arXiv.2205.01198
+- DOI: 10.35490/EC3.2022.160
