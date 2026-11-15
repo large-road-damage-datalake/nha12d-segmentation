@@ -2,7 +2,7 @@
 
 ## Overview
 
-NHA12D is a task-specific package derived from the published NHA12D crack segmentation dataset.
+NHA12D is a UK pavement crack segmentation dataset introduced by Huang et al. (2022).
 
 - Task: segmentation
 - Images: 80
@@ -10,7 +10,7 @@ NHA12D is a task-specific package derived from the published NHA12D crack segmen
 - Classes: 1 (crack)
 - Annotation format: paired PNG masks
 
-The source dataset contains 80 pavement images (40 asphalt and 40 concrete) captured by digital survey vehicles on the A12 network in the UK.
+The dataset contains 80 pavement images (`1920x1080`, 40 asphalt and 40 concrete; 25 top-down and 15 forward/wide-view per surface type) captured by National Highways digital survey vehicles on the A12 network in the United Kingdom.
 
 ## Source Dataset
 

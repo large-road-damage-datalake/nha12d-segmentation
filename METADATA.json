@@ -4,7 +4,7 @@
     "id": "nha12d-segmentation",
     "name": "NHA12D",
     "short_name": "nha12d-seg",
-    "description": "Segmentation packaging of NHA12D, a UK pavement crack dataset with paired image-level masks across asphalt and concrete pavements.",
+    "description": "NHA12D is a UK pavement crack segmentation dataset containing 80 images (40 asphalt and 40 concrete; 25 top-down and 15 forward/wide-view per surface type) captured by National Highways digital survey vehicles on the A12 road network.",
     "year": 2022
   },
   "project_context": {
@@ -24,7 +24,7 @@
     "task_subtype": "semantic_segmentation"
   },
   "imaging_setup": {
-    "camera": "Digital survey vehicle cameras on UK A12 road network",
+    "camera": "Digital survey vehicle cameras",
     "camera_viewpoint": [
       "top-down",
       "wide-view"
@@ -121,9 +121,11 @@
         "annotation_coverage": 1.0,
         "dataset_size": "24.66 MB",
         "dataset_size_bytes": 25854985,
-        "dataset_file_count": 160
+        "dataset_file_count": 160,
+        "annotated": true
       }
-    }
+    },
+    "n_images_in_annotated_splits": 80
   },
   "geographic_coverage": {
     "countries": [
@@ -144,22 +146,22 @@
   "authors": [
     {
       "name": "Zhening Huang",
-      "affiliation": "University of Cambridge",
+      "affiliation": "Department of Engineering, University of Cambridge, Cambridge, United Kingdom",
       "role": "Dataset Creator"
     },
     {
       "name": "Weiwei Chen",
-      "affiliation": "University of Cambridge",
+      "affiliation": "Department of Engineering, University of Cambridge, Cambridge, United Kingdom",
       "role": "Dataset Creator"
     },
     {
       "name": "Abir Al-Tabbaa",
-      "affiliation": "University of Cambridge",
+      "affiliation": "Department of Engineering, University of Cambridge, Cambridge, United Kingdom",
       "role": "Dataset Creator"
     },
     {
       "name": "Ioannis Brilakis",
-      "affiliation": "University of Cambridge",
+      "affiliation": "Department of Engineering, University of Cambridge, Cambridge, United Kingdom",
       "role": "Dataset Creator"
     }
   ],
@@ -171,7 +173,7 @@
     "homepage": "https://github.com/ZheningHuang/NHA12D-Crack-Detection-Dataset-and-Comparison-Study"
   },
   "citation": {
-    "bibtex": "@article{huang2022nha12d,\n  title = {NHA12D: A New Pavement Crack Dataset and a Comparison Study Of Crack Detection Algorithms},\n  author = {Huang, Zhening and Chen, Weiwei and Al-Tabbaa, Abir and Brilakis, Ioannis},\n  journal = {European Conference on Computing in Construction},\n  year = {2022},\n  doi = {10.48550/arXiv.2205.01198},\n  url = {https://arxiv.org/abs/2205.01198}\n}"
+    "bibtex": "@inproceedings{huang2022nha12d,\n  title = {NHA12D: A New Pavement Crack Dataset and a Comparison Study of Crack Detection Algorithms},\n  author = {Huang, Zhening and Chen, Weiwei and Al-Tabbaa, Abir and Brilakis, Ioannis},\n  booktitle = {Proceedings of the 2022 European Conference on Computing in Construction (EC3)},\n  year = {2022},\n  doi = {10.35490/EC3.2022.160},\n  eprint = {2205.01198},\n  archivePrefix = {arXiv},\n  url = {https://ec-3.org/publications/conference/paper/?id=EC32022_160}\n}"
   },
   "tags": [
     "segmentation",
